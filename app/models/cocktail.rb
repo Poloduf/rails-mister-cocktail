@@ -1,3 +1,5 @@
 class Cocktail < ApplicationRecord
-  validates :name, uniqueness: true, presence: true, inclusion: { in: ["Mint Julep", "Whiskey Sour", "Mojito"], allow_nil: false}
+  has_many  :ingredients, :through => :doses
+  has_many  :doses, :dependent => :destroy
+  validates :name, uniqueness: true, presence: true
 end
