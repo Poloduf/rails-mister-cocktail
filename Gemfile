@@ -56,3 +56,5 @@ gem 'rails-controller-testing', group: [ :test ]
 gem 'simple_form'
 gem 'bootstrap-sass'
 gem "font-awesome-sass"
+gem 'cloudinary'
+gem 'figaro'
