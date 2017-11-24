@@ -4,7 +4,8 @@
       <h1>All Cocktails</h1>
 
       <%= link_to 'New cocktail', new_cocktail_path, class: 'btn btn-primary' %>
-
+      <br>
+      <br>
       <ul>
         <% @cocktails.each do |cocktail| %>
           <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
